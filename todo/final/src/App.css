@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.app {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.todo h1 {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 1rem 0;
+  padding: 0 0.2rem;
+  width: 340px;
+  height: 30px;
+}
+
+.todo-btn {
+  background-color: hsl(200, 40%, 40%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0.5rem;
+  width: 110px;
+  height: 30px;
+}
+
+.disabled{
+  cursor: not-allowed;
+}
+
+.todo-btn:hover {
+  background-color: hsl(200, 30%, 50%);
+}
+
+.items {
+  width: 500px;
+}
+
+.item {
+  cursor: default;
+  border: 1px solid #dddddd;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  transition: .3s ease-in-out;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.item li {
+  display: flex;
+  width: 350px;
+}
+
+.item:hover {
+  background-color: hsl(200, 40%, 90%);
+  transform: translateX(1px);
+}
+
+.item span {
+  display: flex;
+  align-items: center;
+}
+
+.item button {
+  padding: 0.2rem 0.5rem;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  background-color: hsl(10, 90%, 50%);
+  cursor: pointer;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.update {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update input {
+  width: 300px !important;
+  height: 25px !important;
+  padding: 0.1rem 0.2rem;
+}
+
+.update button {
+  background-color: hsl(120, 100%, 30%);
+  padding: 0.2rem 0.5rem;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.checkbox input {
+  margin: 0.2rem 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
